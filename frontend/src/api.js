@@ -1,7 +1,6 @@
 import axios from 'axios'
 
-const api = axios.create({ baseURL: 'http://192.168.1.21:8000' })
-
+const api = axios.create({ baseURL: 'https://control-pagos-production-de46.up.railway.app' })
 // agrega el token automáticamente en cada petición
 api.interceptors.request.use(config => {
   const token = localStorage.getItem('token')
